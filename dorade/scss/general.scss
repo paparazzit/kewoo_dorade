@@ -1,0 +1,167 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+ul {
+	list-style: none;
+}
+a {
+	color: $black;
+	text-decoration: none;
+}
+.lang-active {
+	color: $accents;
+}
+.icon {
+	background: $accents;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	@include flex(center, center, nowrap, row);
+}
+
+.bg-green {
+	background: $green;
+}
+.bg-yellow {
+	background: $btn-primary;
+}
+.bg-purple {
+	background: $accents;
+}
+.bg-blue {
+	background: $blue;
+}
+
+.section-group {
+	color: $accents;
+	letter-spacing: 1.5px;
+	margin-bottom: 50px;
+	margin-top: calc(1.2rem + 1.2vw);
+	display: inline-block;
+	@include flex(center, center, nowrap, column);
+	h2 {
+		font-weight: 400;
+	}
+	p {
+		letter-spacing: 1.2px;
+		padding: 20px 0;
+		color: $black;
+	}
+}
+
+.tutor_rate {
+	@include flex(center, center, nowrap, row);
+
+	svg {
+		margin-top: 5px;
+		width: 15px;
+		height: 15px;
+		path {
+			fill: $star_gray;
+		}
+		&.rate_5 {
+			path {
+				fill: $star_yellow;
+			}
+		}
+		&.rate_4 {
+			path {
+				fill: $star_yellow;
+			}
+			&:last-child {
+				path {
+					fill: $star_gray;
+				}
+			}
+		}
+		&.rate_3 {
+			path {
+				fill: $star_yellow;
+			}
+			&:nth-child(5),
+			&:nth-child(4) {
+				path {
+					fill: $star_gray;
+				}
+			}
+		}
+		&.rate_2 {
+			path {
+				fill: $star_yellow;
+			}
+			&:nth-child(5),
+			&:nth-child(4),
+			&:nth-child(3) {
+				path {
+					fill: $star_gray;
+				}
+			}
+		}
+		&.rate_1 {
+			path {
+				fill: $star_gray;
+			}
+			&:nth-child(1) {
+				path {
+					fill: $star_yellow;
+				}
+			}
+		}
+		&.rate_0 {
+			path {
+				fill: $star_gray;
+			}
+		}
+	}
+}
+
+body {
+	background: $backgorund-primary;
+	font-family: $font_family;
+	font-size: $font_size;
+	position: relative;
+}
+h2 {
+	font-size: calc(1.2rem + 1.2vw);
+}
+
+.featured-banner {
+	background-color: $accents;
+	padding: 8px 0;
+	text-align: center;
+	color: $white;
+	letter-spacing: 1.5px;
+	font-size: 1.2rem;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+}
+
+.white_btn {
+	height: 40px;
+	width: 150px;
+	background: $white;
+	border: 1px solid $black;
+	text-align: center;
+	line-height: 40px;
+}
+
+.clan {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	border: 1px solid rgba($line_color, 0.5);
+}

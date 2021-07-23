@@ -1,0 +1,168 @@
+.custom-select {
+	padding: 10px 10px 20px 10px;
+	width: 100%;
+	color: rgba($black, 0.5);
+	.select-box {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		width: 100%;
+		.options-container {
+			order: 1;
+			position: absolute;
+			padding: 0 10px;
+			background-color: $white;
+			color: $footer;
+			width: 105%;
+			opacity: 1;
+			max-height: 0;
+			transition: all 0.4s;
+
+			overflow: hidden;
+			top: calc(100% + 18px);
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 100;
+			// border-right: 1px solid $footer;
+			// border-color: rgba($footer, 0.3);
+
+			.option {
+				cursor: pointer;
+				padding: 10px;
+				width: 100%;
+				color: rgba($black, 0.5);
+
+				.radio {
+					display: none;
+				}
+				&:hover {
+					background-color: $accents;
+					color: $white;
+				}
+			}
+			.price {
+				&:hover {
+					background: $white;
+				}
+				.middle {
+					position: relative;
+					width: 100%;
+					max-width: 500px;
+					height: 100px;
+					.price-range {
+						margin-bottom: 15px;
+					}
+					.multirange-slider {
+						input[type="range"] {
+							position: absolute;
+							z-index: 5;
+							width: 100%;
+							height: 10px;
+							opacity: 0;
+							-webkit-appearance: none;
+							appearance: none;
+							pointer-events: none;
+
+							&::-moz-range-thumb {
+								-webkit-appearance: none;
+								pointer-events: none;
+								appearance: none;
+								width: 30px;
+								height: 30px;
+								border: 0 none;
+								border-radius: 0;
+								pointer-events: all;
+							}
+							&::-webkit-slider-thumb {
+								-webkit-appearance: none;
+								pointer-events: none;
+								appearance: none;
+								width: 30px;
+								height: 30px;
+								border: 0 none;
+								border-radius: 0;
+								pointer-events: all;
+							}
+						}
+						.slider {
+							position: relative;
+							z-index: 1;
+							height: 10px;
+							margin: 0 15px;
+							/* border: 1px solid red; */
+							.track {
+								position: absolute;
+								z-index: 1;
+								left: 0;
+								right: 0;
+								top: 0;
+								bottom: 0;
+								border-radius: 5px;
+								background-color: $backgorund-primary;
+							}
+							.range {
+								position: absolute;
+								z-index: 2;
+								left: 25%;
+								right: 25%;
+								top: 0;
+								bottom: 0;
+								border-radius: 5px;
+								background-color: $accents;
+							}
+							.thumb {
+								position: absolute;
+								z-index: 3;
+								width: 30px;
+								height: 30px;
+								border-radius: 50%;
+								background-color: $accents;
+								opacity: 1;
+								&.left {
+									left: 25%;
+									transform: translateX(-15px) translateY(-10px);
+								}
+
+								&.right {
+									right: 25%;
+									transform: translate(15px) translateY(-10px);
+								}
+							}
+						}
+					}
+				}
+			}
+			&.active {
+				max-height: 240px;
+				opacity: 1;
+				padding: 0px;
+				z-index: 100;
+				// border-right: 1px solid rgba($footer, 0.3);
+				+ .selected::after {
+					transform: translateY(-50%) rotate(90deg);
+				}
+			}
+		}
+		.selected {
+			order: 0;
+			cursor: pointer;
+			&::after {
+				display: block;
+				content: "";
+				height: 0;
+				width: 0;
+				border-top: 10px solid $footer;
+				border-right: 10px solid transparent;
+				border-left: 10px solid transparent;
+				position: absolute;
+				right: 10px;
+				top: 50%;
+				transform: translateY(-50%);
+				transition: 0.3s all ease-in-out;
+			}
+		}
+		label {
+			cursor: pointer;
+		}
+	}
+}

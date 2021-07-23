@@ -1,0 +1,35 @@
+// MIXINs
+@mixin flex($align, $justify, $wrap, $direction) {
+	display: flex;
+	align-items: $align;
+	justify-content: $justify;
+	flex-wrap: $wrap;
+	flex-direction: $direction;
+}
+@mixin btn-primary($color, $fsize) {
+	color: $color;
+	background: $btn-primary;
+	font-size: $fsize;
+	font-family: $font_family;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	transition: $transition;
+	&:hover {
+		background: darken($btn-primary, 20%);
+	}
+}
+
+@mixin hgroup {
+	text-align: center;
+	h2 {
+		color: $accents;
+		font-weight: 500;
+		font-size: 2rem;
+		letter-spacing: 1.5px;
+	}
+	p {
+		letter-spacing: 1.2px;
+		padding: 20px 0;
+	}
+}

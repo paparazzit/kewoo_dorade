@@ -1,0 +1,2592 @@
+@media (max-width: $breakPoint_1) {
+	.tutor_profile_view {
+		.container {
+			.tutor-card {
+				.tutor-card-img {
+					width: 23%;
+				}
+			}
+		}
+	}
+	.proposition {
+		padding-bottom: 80px;
+
+		.container {
+			.right-side {
+				h2 {
+					font-size: 1.7rem;
+					height: 15%;
+					text-align: center;
+				}
+				.wrapper {
+					height: 85%;
+					@include flex(center, space-evenly, wrap, row);
+					article {
+						@include flex(center, space-between, nowrap, row);
+						.text {
+							width: 85%;
+							h4 {
+								font-size: 1.1rem;
+								padding-bottom: 15px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $breakPoint_2) {
+	.become_tutor {
+		.container {
+			.row {
+				.rigth {
+					padding: 20px;
+
+					.section-group {
+						h2 {
+							font-size: 1.8rem;
+						}
+						p {
+							padding: 7px 0 0 0;
+						}
+					}
+					.become_tutor_text {
+						padding: 10px 0;
+						p {
+							font-size: 0.95rem;
+						}
+					}
+					.becom_tutor_stats {
+						p {
+							font-size: 0.95rem;
+						}
+					}
+					.decription-btns {
+						padding-top: 35px;
+						.btn {
+							@include btn-primary($black, 1rem);
+							padding: 15px 35px;
+						}
+						.faq {
+							font-size: 0.95rem;
+						}
+					}
+				}
+			}
+		}
+	}
+	.find_your_tutor {
+		.container {
+			.input_search {
+				.search-term {
+					width: 350px;
+				}
+			}
+		}
+	}
+	.tutor_profile_view {
+		.container {
+			.tutor-card {
+				.tutor-card-img {
+					width: 23%;
+				}
+				.tutor-card-text {
+					width: 65%;
+					.tutor-card-header {
+						.tutor-headline-group {
+							.tutor-headline {
+								margin-bottom: 10px;
+								h3 {
+									margin-right: 10px;
+									font-size: 1.6rem;
+								}
+							}
+						}
+					}
+					.tutor-card-bio {
+						margin-top: 10px;
+						width: 100%;
+						font-size: 0.95rem;
+						color: $footer;
+						p {
+							line-height: 1.3;
+						}
+						a {
+							color: $accents;
+						}
+					}
+				}
+				.tutor-card-ctr {
+					width: 10%;
+
+					padding: 0 0 20px 0;
+					.price {
+						font-size: 1.6rem;
+
+						font-weight: 400;
+						span {
+							font-size: 1.4rem;
+						}
+					}
+					.availability {
+						text-decoration: underline;
+						color: $footer;
+						margin-bottom: 10px;
+					}
+					.btn-trial {
+						@include btn-primary($black, 0.9rem);
+						height: 35px;
+						width: 140px;
+						line-height: 35px;
+					}
+					.btn-book-lesson {
+						@include btn-primary($black, 0.9rem);
+						height: 35px;
+						width: 140px;
+						line-height: 35px;
+						background: $white;
+						border: 1px solid $black;
+					}
+				}
+			}
+		}
+	}
+	/*******************
+	TUTOR PROFILE PAGE
+	*******************/
+	.tutor_profile_header {
+		.container {
+			.tutor-profile-view {
+				.tutor-profile-card {
+					@include flex(stretch, space-between, wrap, row);
+					.tutor-img {
+						width: 20%;
+						// border: 1px solid black;
+					}
+					.tutor-content {
+						width: 80%;
+						// border: 1px solid yellowgreen;
+						padding: 30px 20px 30px 20px;
+						@include flex(stretch, space-between, wrap, row);
+
+						.my_profile {
+							font-size: 0.95rem;
+						}
+						.tutor-card-headline {
+							// width: 270px;
+							// min-width: 220px;
+							// border: 1px solid black;
+							width: 26%;
+							position: relative;
+							padding-right: 15px;
+
+							h3 {
+								font-size: 2.1rem;
+								font-weight: 400;
+							}
+						}
+						.tutor-card-description {
+							position: relative;
+							width: 70%;
+
+							// border: 1px solid black;
+							@include flex(center, flex-start, wrap, row);
+							padding-left: 20px;
+							div {
+								@include flex(center, flex-start, wrap, row);
+								margin-right: 50px;
+								margin-bottom: 20px;
+								p {
+									font-size: 0.9rem;
+								}
+								img {
+									margin-left: 15px;
+									width: 15px;
+									height: 15px;
+								}
+							}
+						}
+					}
+				}
+				.tutor-profile-nav {
+					padding: 15px 40px;
+					ul {
+						width: 100%;
+						li {
+							width: 14.28%;
+							a {
+								font-size: 0.9rem;
+							}
+						}
+						&:first-child {
+							margin-bottom: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.certificate {
+		.container {
+			.wrapper {
+				width: 90%;
+
+				div {
+					label {
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+	.apps,
+	.expert {
+		.container {
+			.wrapper {
+				p {
+					width: 20%;
+					margin-right: 40px;
+					min-width: unset;
+				}
+				textarea {
+					max-width: 50%;
+				}
+			}
+		}
+	}
+
+	.payment_method {
+		.container {
+			.wrapper {
+				.inputs {
+					width: 75%;
+
+					input {
+						min-width: 180px;
+					}
+				}
+				.label,
+				.request_review {
+					width: 20%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $breakPoint_3) {
+	//////////////////////////////
+	////////map//////////////////
+	/////////////////////////////
+
+	.map-section {
+		.map-container {
+			.map-wrapper {
+				.map-box {
+					.map-marker {
+						transform: scale(0.85);
+					}
+				}
+			}
+		}
+	}
+	.become_tutor {
+		.container {
+			.row {
+				.left {
+					align-self: stretch;
+					.left-img {
+						height: 100%;
+						width: 100%;
+
+						img {
+							object-fit: none;
+							object-position: center;
+							width: none !important;
+						}
+					}
+				}
+
+				.rigth {
+					.become_tutor_text {
+						width: 100%;
+						padding: 10px 0;
+						p {
+							font-size: 0.95rem;
+						}
+					}
+					.becom_tutor_stats {
+						p {
+							font-size: 0.85rem;
+						}
+					}
+					.decription-btns {
+						@include flex(center, center, wrap, row);
+						padding-top: 30px;
+						.btn {
+							@include btn-primary($black, 0.95rem);
+						}
+						.faq {
+							font-size: 0.9rem;
+							margin-top: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.how {
+		padding: 100px 0;
+		.container {
+			.row {
+				width: 95%;
+				.description {
+					width: 40%;
+					margin: 0;
+					padding: 0 20px;
+				}
+			}
+		}
+	}
+
+	// MY CALSSES
+	.my_classes {
+		.container {
+			.wrapper {
+				width: 100%;
+
+				.calendar_table {
+					table {
+						tr {
+							td {
+								padding: 10px 7px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// MY CALENDAR
+	.my_calendar {
+		.container {
+			.wrapper {
+				@include flex(stretch, space-between, wrap, column);
+				.calendar_panel {
+					width: 100%;
+					border-right: none;
+					border-bottom: 1px solid rgba($line_color, 0.5);
+					@include flex(stretch, space-between, wrap, row);
+					> div {
+						width: 25%;
+						border-bottom: none;
+						border-right: 1px solid rgba($line_color, 0.5);
+						padding: 15px;
+						p {
+							font-size: 0.9rem;
+						}
+					}
+					.holidays {
+						order: 5;
+						width: 100%;
+						border-bottom: none;
+						border-top: 1px solid rgba($line_color, 0.5);
+						border-right: none;
+						.available {
+							@include flex(center, space-evenly, wrap, row);
+							width: 80%;
+							margin: 10px auto;
+							min-width: 300px;
+							p {
+								&:first-child {
+									width: 100%;
+									text-align: center;
+									margin-bottom: 20px;
+								}
+								span {
+									display: none;
+								}
+							}
+							.from {
+								display: inline-block;
+							}
+							input {
+								width: 40%;
+							}
+							a {
+								width: 100%;
+								text-align: center;
+							}
+						}
+					}
+					.legend {
+						border-right: none;
+					}
+				}
+				.calendar_view {
+					width: 100%;
+					.calendar_slider {
+						padding: 8px 0;
+					}
+					.date {
+						min-height: 80px;
+						// &:nth-child(29) {
+						// 	border-bottom-left-radius: 10px;
+						// }
+					}
+				}
+			}
+		}
+	}
+
+	.booking {
+		.container {
+			.wrapper {
+				.calendar_panel {
+					flex-direction: row !important;
+
+					@include flex(center, space-evenly, nowrap, column);
+					.reservations {
+						border: none;
+						@include flex(flex-start, space-between, wrap, column);
+					}
+					.local_time {
+						@include flex(center, center, nowrap, column);
+
+						border: none;
+						margin-top: unset;
+						border-right: 1px solid $gray;
+						align-self: stretch;
+					}
+					.legend {
+						border-top: none;
+					}
+				}
+			}
+		}
+	}
+	.tutor_details_header {
+		margin-bottom: 300px;
+	}
+	.tutor_lesson_header {
+		margin-bottom: 140px;
+	}
+}
+
+@media (max-width: $breakPoint_4) {
+	.featured-banner {
+		background-color: $accents;
+		padding: 3px 0;
+		text-align: center;
+		color: $white;
+		letter-spacing: 1px;
+		font-size: 0.9rem;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		position: absolute;
+		width: 100%;
+		bottom: 0px;
+	}
+	header {
+		padding: 50px 30px;
+		hgroup {
+			h1 {
+				font-weight: 500;
+				font-size: 2rem;
+				span {
+					color: $btn-primary;
+				}
+			}
+			label {
+				width: none !important;
+				position: relative;
+				display: flex;
+				@include flex(center, start, wrap, row);
+				margin: 30px 0;
+				p {
+					font-size: 0.9rem;
+				}
+				input {
+					width: 60%;
+					height: 70px;
+					border: none;
+					font-size: 1rem;
+
+					border-bottom-left-radius: 8px;
+					border-top-left-radius: 8px;
+					padding: 0 10px;
+				}
+				&::placeholder {
+					font-size: 1rem;
+				}
+				button {
+					width: 40%;
+					@include btn-primary($black, 1rem);
+					border-radius: 0px;
+					height: none;
+					border-bottom-right-radius: 8px;
+					border-top-right-radius: 8px;
+				}
+			}
+		}
+	}
+
+	.how {
+		.container {
+			.row {
+				.description {
+					width: 40%;
+					margin: 0;
+					padding: 0 20px;
+				}
+				.description_img {
+					width: 40%;
+				}
+			}
+			.decription-btns {
+				@include flex(center, center, nowrap, row);
+				margin: 0 auto;
+				padding-top: 50px;
+				.btn {
+					@include btn-primary($black, 1.2rem);
+					padding: 15px 40px;
+					display: inline-block;
+					margin-right: 20px;
+				}
+				.faq {
+					color: $accents;
+					line-height: 0;
+					font-size: 1rem;
+
+					@include flex(center, center, nowrap, row);
+					img {
+						height: 20px;
+						width: 20px;
+						display: block;
+						margin-right: 5px;
+					}
+				}
+			}
+		}
+	}
+	/******************
+		TESTIMONIALS
+	******************/
+	.testimonials {
+		padding-bottom: 80px;
+		.container .owl-carousel {
+			.item {
+				@include flex(start, center, nowrap, row);
+				height: 100%;
+				.item_left {
+					align-self: stretch;
+
+					img {
+						height: 100%;
+
+						object-fit: cover;
+						object-position: center;
+					}
+				}
+				.item_right {
+					height: 100%;
+					width: 65%;
+					height: 100%;
+					padding-left: 40px;
+					position: relative;
+					align-self: center;
+
+					.wrapper {
+						padding-top: 20px;
+						padding-bottom: 20px;
+
+						.item-text {
+							width: 92%;
+							margin-top: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.row {
+		@include flex(center, center, wrap, row);
+		.btn {
+			@include btn-primary($black, 1.2rem);
+			padding: 15px 40px;
+			display: inline-block;
+			margin-right: 20px;
+		}
+	}
+
+	.tutor_profile_view {
+		.container {
+			.tutor-card {
+				.tutor-card-img {
+					display: none;
+				}
+				.tutor-card-text {
+					width: 88%;
+					.tutor-card-header {
+						.tutor-headline-group {
+							order: 2;
+						}
+						.tutor-img-round {
+							width: 120px;
+							height: 120px;
+							margin: 0 20px 10px 0;
+							display: block;
+							img {
+								border-radius: 10px;
+								width: 100%;
+								display: block;
+							}
+						}
+					}
+					.tutor-card-bio {
+						margin-top: 10px;
+						width: 98%;
+					}
+				}
+				.tutor-card-ctr {
+					width: 12%;
+					min-width: 150px;
+					@include flex(flex-start, center, wrap, column);
+					.availability {
+						margin-bottom: 20px;
+					}
+					.btn-trial {
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	// FOOTER
+	footer {
+		.container {
+			width: 85%;
+			.row {
+				@include flex(start, space-between, wrap, row);
+				margin: 50px 0 50px 0;
+				article {
+					width: 25%;
+					padding: 0 15px;
+					&:first-child {
+						padding: 0 15px 0 0;
+					}
+				}
+				h4 {
+					margin-bottom: 10px;
+					font-size: 1.5rem;
+
+					letter-spacing: 1.3px;
+					line-height: 1;
+				}
+				ul {
+					li {
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+	.find_your_tutor {
+		.container {
+			.search_options {
+				.filter_opt {
+					width: 50%;
+					&:nth-child(2) {
+						border-radius: 0px 10px 10px 0;
+						border-right: none;
+					}
+					&:nth-child(3) {
+						border-radius: 10px 0 0 10px;
+					}
+				}
+			}
+			.input_search {
+				.search-term {
+					margin-top: 20px;
+				}
+				p {
+					margin-top: 20px;
+				}
+				.custom-select {
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+
+	.statistics {
+		padding: 40px 0;
+		.container {
+			.row {
+				article {
+					width: 220px;
+					padding: 0px 15px;
+
+					h2 {
+						font-size: 4rem;
+					}
+					p {
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
+
+	.proposition {
+		.container {
+			.left-side {
+				display: none;
+			}
+			.right-side {
+				padding: 30px 20px 30px 20px;
+				width: 100%;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+
+				h2 {
+					font-size: 1.7rem;
+				}
+				.wrapper {
+					@include flex(center, space-between, wrap, row);
+					width: 80%;
+
+					height: unset;
+					article {
+						margin-bottom: 20px;
+						@include flex(center, space-between, nowrap, row);
+					}
+				}
+			}
+		}
+	}
+
+	.tutor_profile_header {
+		// height: 50vh;
+		margin-bottom: 200px;
+		.container {
+			.tutor-profile-view {
+				.tutor-profile-card {
+					@include flex(stretch, space-between, wrap, row);
+					.tutor-img {
+						width: 25%;
+					}
+					.tutor-content {
+						width: 75%;
+
+						padding: 30px 10px 20px 20px;
+
+						.my_profile {
+							font-size: 0.9rem;
+						}
+						.tutor-card-headline {
+							width: 35%;
+
+							h3 {
+								font-size: 1.9rem;
+							}
+						}
+						.tutor-card-description {
+							position: relative;
+							width: 65%;
+
+							// border: 1px solid black;
+							@include flex(center, flex-start, wrap, row);
+							padding-left: 20px;
+							div {
+								@include flex(center, flex-start, wrap, row);
+								margin-right: 30px;
+								margin-bottom: 20px;
+								p {
+									font-size: 0.9rem;
+								}
+								img {
+									margin-left: 15px;
+									width: 15px;
+									height: 15px;
+								}
+							}
+						}
+					}
+				}
+				.tutor-profile-nav {
+					@include flex(center, space-between, wrap, row);
+					padding: 20px 50px;
+					ul {
+						width: 100%;
+						@include flex(flex-start, space-between, wrap, row);
+						li {
+							width: 28.5%;
+							a {
+								color: $white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.apps,
+	.expert {
+		.container {
+			.wrapper {
+				p {
+					width: 30%;
+					margin-right: 40px;
+					min-width: unset;
+				}
+				textarea {
+					width: 70%;
+				}
+			}
+		}
+	}
+	.tutor_details_header {
+		margin-bottom: 300px;
+	}
+	.tutor_lesson_header {
+		margin-bottom: 120px;
+	}
+
+	.payment_method {
+		.container {
+			.wrapper {
+				.inputs {
+					width: 100%;
+
+					input {
+						min-width: 150px;
+					}
+				}
+				.label,
+				.request_review {
+					width: 50%;
+					p {
+						br {
+							display: none;
+						}
+					}
+				}
+				.request_review {
+					width: 25%;
+					min-width: 180px;
+				}
+			}
+		}
+	}
+	.details {
+		.container {
+			.wrapper {
+				form {
+					.row {
+						@include flex(center, flex-start, wrap, row);
+
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $breakPoint_5) {
+	/******************** 
+    NAV
+********************/
+	nav {
+		position: relative;
+		box-shadow: 0 0 8px rgba(0, 0, 0, 0.418);
+
+		.container {
+			@include flex(center, space-between, nowrap, row);
+			width: 100%;
+			padding: 0 30px;
+			position: relative;
+
+			.drop-down {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 155%;
+				width: 100%;
+				height: 0;
+				overflow: hidden;
+				padding: 0 30px;
+				@include flex(flex-end, center, nowrap, column);
+				z-index: 100;
+				background-color: $backgorund-primary;
+				border-bottom-left-radius: 10px;
+				border-bottom-right-radius: 10px;
+				transition: 0.4s all ease;
+
+				ul {
+					@include flex(center, space-between, nowrap, row);
+					padding: 0;
+					list-style-type: none;
+				}
+				.nav-links {
+					width: unset;
+					display: block;
+					text-align: right;
+
+					li {
+						margin: 15px 0;
+						a {
+							font-size: 1.3rem;
+						}
+					}
+				}
+				hr {
+					display: block;
+					width: 100%;
+					border-right: none;
+					border-left: none;
+					border-top: none;
+					border-bottom: 1px solid $line_color;
+					margin: 10px 0;
+				}
+				.langs {
+					li {
+						margin-top: 15px;
+						&:last-child {
+							&::after {
+								display: none;
+							}
+						}
+					}
+				}
+				.login {
+					margin-top: 10px;
+				}
+			}
+			.active {
+				height: 40vh;
+				padding: 20px 30px;
+				transition-delay: 0.4s;
+			}
+			.login {
+				margin-left: 30px;
+				position: absolute;
+				right: 80px;
+				top: 50%;
+				transform: translateY(-50%);
+
+				img {
+					width: 25px;
+					height: 25px;
+				}
+			}
+			.toggle-bar {
+				width: 20px;
+				height: 20px;
+				cursor: pointer;
+				transition: 0.4s all ease-in-out;
+				display: block;
+			}
+		}
+	}
+
+	//////////////////////////////
+	////////map//////////////////
+	/////////////////////////////
+	@keyframes markeri {
+		0% {
+			opacity: 0;
+			transform: scale(0);
+		}
+		90% {
+			opacity: 0.8;
+			transform: scale(1);
+		}
+		100% {
+			opacity: 1;
+			transform: scale(0.75);
+		}
+	}
+
+	.map-section {
+		.map-container {
+			.map-wrapper {
+				.map-box {
+					.map-marker {
+						transform: scale(0.75);
+					}
+				}
+			}
+		}
+	}
+	.become_tutor {
+		.container {
+			.row {
+				.left {
+					display: none;
+				}
+				.rigth {
+					width: 85%;
+					text-align: center;
+					@include flex(center, center, wrap, column);
+					.becom_tutor_stats {
+						text-align: left;
+						.section-group {
+							@include flex(center, center, wrap, column);
+							h2 {
+								font-size: 2.2rem;
+							}
+						}
+						.decription-btns {
+							@include flex(center, center, wrap, row);
+							padding-top: 30px;
+							.btn {
+								@include btn-primary($black, 0.95rem);
+								margin-top: 10px;
+							}
+							.faq {
+								font-size: 0.9rem;
+								margin-top: 10px;
+								padding-bottom: 0;
+							}
+						}
+						.section-group {
+							@include flex(center, center, wrap, column);
+							h2 {
+								font-size: 2.2rem;
+							}
+						}
+						.decription-btns {
+							@include flex(center, center, wrap, row);
+							padding-top: 30px;
+							.btn {
+								@include btn-primary($black, 0.95rem);
+								margin-top: 10px;
+							}
+							.faq {
+								font-size: 0.9rem;
+								margin-top: 10px;
+								padding-bottom: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.how {
+		.container {
+			.row {
+				// width: 95%;
+				// margin-bottom: 40px;
+				.description {
+					width: 70%;
+					margin: 0;
+					padding: 0 20px;
+					p {
+						margin-bottom: 0px;
+					}
+				}
+				.description_img {
+					width: 60%;
+					margin: 30px auto;
+				}
+			}
+		}
+	}
+
+	.tutor_profile_header {
+		padding-bottom: 50px;
+		margin-bottom: 250px;
+		background-image: url(/img/search_opt/search_opt_bg.png);
+		background-position: center;
+		background-size: cover;
+		// height: 50vh;
+		position: relative;
+		.container {
+			position: absolute;
+			border-radius: 10px;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: -60%;
+			.tutor-profile-view {
+				.tutor-profile-card {
+					.tutor-img {
+						display: none;
+					}
+					.tutor-content {
+						@include flex(stretch, flex-start, wrap, row);
+						width: 100%;
+
+						padding: 25px;
+
+						.my_profile {
+							font-size: 1rem;
+							margin-bottom: -1rem;
+						}
+						.tutor-card-headline {
+							width: 100%;
+							margin-bottom: 0px;
+							margin-left: 0px;
+							text-align: left;
+							padding-right: 0;
+
+							h3 {
+								font-size: 1.8rem;
+							}
+							&::after {
+								width: 100%;
+								height: 1px;
+								display: inline-block;
+								position: absolute;
+								content: "";
+								background-color: $line_color;
+								top: unset;
+								display: none;
+								right: 0;
+							}
+							.availability {
+								margin-bottom: 10px;
+							}
+						}
+						.tutor-img-mob {
+							display: block;
+							margin-bottom: 10px;
+							position: relative;
+							img {
+								width: 150px;
+								height: auto;
+								border-radius: 10px;
+
+								display: block;
+								&:nth-child(2) {
+									position: absolute;
+									width: 25px;
+									height: 25px;
+									top: 5px;
+									right: 5px;
+									cursor: pointer;
+									transition: $transition;
+									border: 1px solid transparent;
+									&:hover {
+										transform: scale(1.1);
+										border: 1px solid $accents;
+									}
+								}
+							}
+						}
+						.tutor-card-description {
+							position: relative;
+							width: 100%;
+
+							// border: 1px solid black;
+							@include flex(center, flex-start, wrap, row);
+							padding-left: 0px;
+							div {
+								@include flex(center, flex-start, wrap, row);
+								margin-right: 15px;
+								margin-bottom: 10px;
+								p {
+									font-size: 0.9rem;
+								}
+								img {
+									margin-left: 5px;
+									width: 15px;
+									height: 15px;
+								}
+							}
+							&::before {
+								content: "";
+								display: block;
+								width: 100%;
+								height: 1px;
+								background-color: $line_color;
+								margin-bottom: 10px;
+							}
+						}
+					}
+				}
+				.tutor-profile-nav {
+					@include flex(center, space-between, wrap, row);
+					padding: 10px 50px;
+
+					position: relative;
+					.tutor-nav-toggle {
+						margin: 0 auto;
+						display: block;
+						cursor: pointer;
+						pointer-events: all;
+						span {
+							border-top: 10px solid $white;
+							border-bottom: none;
+							border-left: 10px solid transparent;
+							border-right: 10px solid transparent;
+							margin: 0 auto;
+							display: inline-block;
+						}
+					}
+					ul {
+						background-color: $accents;
+
+						max-height: 0;
+						overflow-y: hidden;
+						width: 100%;
+						transition: 0.4s all ease-in-out;
+						@include flex(flex-start, center, wrap, row);
+						position: absolute;
+						top: 80%;
+						left: 0;
+						padding: 0px 20px;
+						border-bottom-left-radius: 10px;
+						border-bottom-right-radius: 10px;
+						li {
+							width: 45%;
+							opacity: 0;
+
+							a {
+								color: $white;
+							}
+							&.show {
+								opacity: 1;
+							}
+							transition: 0.4s ease-in-out;
+						}
+						&.active-tutor-nav {
+							max-height: 300px;
+							padding: 30px 20px 20px 20px;
+							// border: 1px solid black;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.tutor_details_header {
+		margin-bottom: 330px;
+	}
+	.my_messages {
+		.container {
+			.wrapper {
+				.mail_panel {
+					min-width: unset;
+					max-width: unset;
+					.mail_nav {
+						ul {
+							li {
+								a {
+									margin-right: 0;
+								}
+							}
+						}
+					}
+					.mail_slider {
+						.mail_count {
+							font-size: 0.85rem;
+							// border: 1px solid black;
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+	.payment_method {
+		.container {
+			.wrapper {
+				width: 100%;
+				@include flex(flex-start, flex-start, wrap, row);
+				p {
+					&:first-child {
+						// margin-right: 40px;
+						// margin-bottom: 20px;
+					}
+				}
+				.paymant-inputs {
+					@include flex(center, space-between, wrap, row);
+					width: 100%;
+
+					input {
+						width: 48%;
+						min-width: 200px;
+						margin-bottom: 20px;
+						padding: 10px;
+						border-radius: 5px;
+						border: 1px solid rgba($line_color, 0.5);
+						&::placeholder {
+							color: rgba($black, 0.5);
+						}
+					}
+					button {
+						width: 48%;
+						min-width: 200px;
+					}
+				}
+				.preffered_paymet {
+					margin-top: 20px;
+					width: 100%;
+					span {
+						cursor: pointer;
+						margin: 0 10px;
+						&:first-child {
+							margin-left: 20px;
+						}
+						&.preffered_payment_active {
+							color: $accents;
+						}
+					}
+				}
+			}
+		}
+	}
+	// TUTOR DETAILS
+	.tutor_details_header {
+		.tutor-profile {
+			.container {
+				.tutor-profile-view {
+					.tutor-profile-card {
+						.tutor-img {
+						}
+						.tutor-content {
+							justify-content: space-between;
+							.my_profile {
+								flex-direction: column;
+								justify-content: flex-start;
+								align-items: flex-end;
+								order: 2;
+								width: 65%;
+								button {
+									span {
+										font-weight: 600;
+									}
+									margin-bottom: 15px;
+								}
+								> div {
+									.rate {
+										margin-top: 15px;
+										img {
+											width: 23px;
+											height: 23px;
+										}
+									}
+									.views {
+										color: rgba($line_color, 0.5);
+										font-size: 0.9rem;
+									}
+								}
+							}
+							.tutor-card-headline {
+								order: 3;
+								@include flex(stretch, space-between, wrap, column);
+								.tutor_for {
+									font-size: 1.25em;
+									margin: 10px 0 20px 0;
+									align-self: flex-start;
+								}
+							}
+							.tutor-img-mob {
+								order: 1;
+							}
+							.tutor-card-description {
+								order: 4;
+							}
+						}
+					}
+					.tutor-profile-nav {
+					}
+				}
+			}
+		}
+	}
+	.tutor_lesson_header {
+		margin-bottom: 200px;
+	}
+
+	// REVIEW SECTION
+	.review_section {
+		.leave_review {
+			.container {
+				.review__wrapper {
+					.post {
+						display: none;
+
+						.text {
+						}
+						.your_review {
+							padding: 10px 20px;
+							border: 1px solid rgba($line_color, 0.7);
+							margin-bottom: 1rem;
+							color: $footer;
+							display: flex;
+							flex-wrap: wrap;
+							align-items: center;
+							justify-content: center;
+							.review_img_out {
+								width: 80px;
+								height: 80px;
+								margin-right: 10%;
+								img {
+									width: 100%;
+									height: 100%;
+									object-fit: contain;
+									object-position: center;
+									display: block;
+									border-radius: 50%;
+								}
+							}
+							.review_name_out {
+								margin-right: 0%;
+							}
+							.review_content_out {
+								color: $accents;
+								margin-top: 10px;
+								flex: 0 0 100%;
+								min-width: 200px;
+							}
+						}
+						.edit {
+							position: absolute;
+							top: 1em;
+							right: 0;
+							cursor: pointer;
+							color: rgba($footer, 0.7);
+							&:hover {
+								text-decoration: underline;
+								color: rgba($footer, 1);
+							}
+						}
+						.btn {
+							@include btn-primary($footer, 1rem);
+							padding: 0.9em 1.2em;
+							cursor: pointer;
+						}
+					}
+					.star-widget {
+						padding: 40px 0;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						text-align: center;
+						h4 {
+							font-size: 1.5rem;
+							font-weight: 300;
+							color: $footer;
+							margin-bottom: 20px;
+						}
+
+						.labels {
+							display: flex;
+							flex-direction: row-reverse;
+
+							input {
+								display: none;
+								&:not(checked) ~ label:hover svg path,
+								&:not(checked) ~ label:hover ~ label svg path {
+									fill: $star_yellow;
+								}
+								&:checked ~ label svg path {
+									fill: $star_yellow;
+								}
+								&#rate-5:checked ~ label svg path {
+									fill: $star_yellow;
+								}
+							}
+
+							label {
+								height: 20px;
+								line-height: 20px;
+								// border: 1px solid red;
+								position: relative;
+								margin-right: 25px;
+
+								svg {
+									height: 20px;
+									// border: 1px solid green;
+									position: absolute;
+									left: 0;
+									top: 0;
+									path {
+										fill: rgba($footer, 0.7);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $breakPoint_6) {
+	.map-section {
+		.map-container {
+			.map-wrapper {
+				.map-box {
+					.map-marker {
+						transform: scale(0.75);
+						&:nth-child(odd) {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.how {
+		.container {
+			.row {
+				margin-top: 0;
+				margin-bottom: 30px;
+				.number {
+					height: 70px;
+					width: 70px;
+					line-height: 70px;
+					font-size: 2.3rem;
+					margin-bottom: 20px;
+				}
+				.description {
+					width: 100%;
+					p {
+						font-size: 0.9rem;
+					}
+				}
+				.description_img {
+					width: 80%;
+					img {
+						width: 100%;
+						display: block;
+					}
+				}
+			}
+			.decription-btns {
+				width: 95%;
+				@include flex(center, center, wrap, row);
+				margin: 0 auto;
+				padding-top: 10px;
+				.btn {
+					@include btn-primary($black, 1.2rem);
+					padding: 15px 40px;
+					display: inline-block;
+					margin-right: 20px;
+					margin-bottom: 20px;
+				}
+				.faq {
+					color: $accents;
+					margin-right: 20px;
+					line-height: 0;
+					font-size: 1rem;
+
+					@include flex(center, center, nowrap, row);
+					img {
+						height: 20px;
+						width: 20px;
+						display: block;
+						margin-right: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	.map-section {
+		.map-container {
+			.flex-icons {
+				padding-top: 30px;
+				article {
+					flex: 0 0 100%;
+					margin-bottom: 25px;
+				}
+			}
+		}
+	}
+
+	/******************
+		TESTIMONIALS
+	******************/
+	.testimonials {
+		.container {
+			.owl-carousel {
+				.item {
+					.item_left {
+						display: none;
+					}
+					.item_right {
+						height: 100%;
+						width: 80%;
+						height: 100%;
+						padding-left: 40px;
+						position: relative;
+						align-self: center;
+
+						.wrapper {
+							padding-top: 20px;
+							padding-bottom: 20px;
+							.item-header {
+								@include flex(center, flex-start, nowrap, row);
+								img {
+									width: 90px;
+									height: 90px;
+								}
+							}
+							.item-text {
+								width: 92%;
+								margin-top: 30px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.row {
+			@include flex(center, center, wrap, row);
+			.btn {
+				@include btn-primary($black, 1.2rem);
+				padding: 15px 40px;
+				display: inline-block;
+				margin-right: 20px;
+			}
+		}
+	}
+	.tutor_profile_view {
+		.container {
+			.tutor-card {
+				@include flex(stretch, space-between, wrap, row);
+
+				.tutor-card-ctr {
+					width: 100%;
+					padding: 0 20px 10px 20px;
+					@include flex(center, space-between, wrap, row);
+					.availability {
+						margin-bottom: 0px;
+						margin-right: 5px;
+						margin-left: 5px;
+					}
+					.btn-trial {
+						width: 130px;
+						margin-bottom: 0px;
+						margin-right: 5px;
+						margin-left: 5px;
+					}
+					.btn-book-lesson {
+						width: 130px;
+						margin-right: 5px;
+						margin-left: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	/******************
+ TUTOR DETAILS
+******************/
+	.tutor_details_header {
+		// margin-bottom: 250px;
+		.tutor-profile {
+			.container {
+				.tutor-profile-view {
+					.tutor-profile-card {
+					}
+					.tutor-profile-nav {
+						ul {
+							justify-content: space-between;
+							li {
+								width: 33%;
+								text-align: left;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.pricing_students {
+		.container {
+			.wrapper {
+				@include flex(flex-end, space-between, wrap, row);
+				.pricing_packs {
+					width: 100%;
+					margin-bottom: 30px;
+				}
+				.pricing_btns {
+					@include flex(flex-end, flex-end, wrap, column);
+					button {
+						width: 260px;
+						padding: 10px 0;
+						margin-bottom: 15px;
+						&:nth-child(2) {
+							background-color: $white;
+							border: 1px solid rgba($line_color, 0.5);
+						}
+						&:last-child {
+							margin-bottom: 0;
+							background-color: $white;
+							border: 1px solid rgba($line_color, 0.5);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/***************
+   FOOTER
+***************/
+	footer {
+		.container {
+			a {
+				letter-spacing: 1px;
+			}
+			.row {
+				@include flex(start, space-between, wrap, row);
+				margin: 50px 0 0px 0;
+				article {
+					width: 100%;
+					margin-bottom: 50px;
+					padding: 0;
+					ul {
+						@include flex(center, flex-start, wrap, row);
+						li {
+							margin-right: 20px;
+							a {
+								font-size: 0.9rem;
+							}
+						}
+					}
+				}
+			}
+			.bottomLine {
+				@include flex(center, flex-start, wrap, row);
+				.copyR {
+					width: 100%;
+				}
+				.desingBy {
+					text-align: left;
+					width: 100%;
+					margin-top: 10px;
+				}
+				.trustPilot {
+					@include flex(center, flex-start, wrap, row);
+					.trust-logo {
+						width: 90px;
+						margin-right: 10px;
+					}
+					.trust-rate-stars {
+						img {
+							width: 15px;
+							margin: 0 2px;
+						}
+						margin-right: 10px;
+					}
+					.trust-rate {
+						margin-left: 0px;
+					}
+				}
+			}
+		}
+	}
+	// PORPOSITION
+
+	.proposition {
+		.container {
+			.right-side {
+				padding: 30px 20px 30px 20px;
+				width: 100%;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+
+				h2 {
+					font-size: 1.7rem;
+				}
+				.wrapper {
+					@include flex(center, space-between, wrap, row);
+					width: 100%;
+
+					height: unset;
+					article {
+						margin-bottom: 25px;
+						@include flex(center, center, wrap, row);
+						.text {
+							width: 100%;
+							text-align: center;
+						}
+						.flex-icon {
+							margin-bottom: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+	// tutor section
+	.tutor_section {
+		.container {
+			h3 {
+				font-size: 1.5rem;
+			}
+			.wrapper {
+				width: 100%;
+				padding: 20px;
+				button {
+					font-size: 0.9rem;
+				}
+				textarea {
+					min-width: 100%;
+				}
+			}
+		}
+	}
+	// edit my profile
+	.edit_my_profile {
+		.container {
+			form {
+				padding: 30px 30px 20px 30px;
+				@include flex(flex-start, space-between, wrap, column);
+				div {
+					margin-bottom: 20px;
+					label {
+						margin-bottom: 10px;
+					}
+					input {
+						margin-bottom: 10px;
+						margin-right: 30px;
+					}
+					a {
+						margin-left: 0px;
+						white-space: nowrap;
+					}
+				}
+
+				button {
+					align-self: flex-start;
+				}
+			}
+		}
+	}
+	// sertificate
+	.certificate {
+		.container {
+			.wrapper {
+				div {
+					width: 49%;
+					margin-bottom: 30px;
+					min-width: 200px;
+					input {
+						font-size: 0.95rem;
+						width: 98%;
+						&:focus {
+							border: 1px solid $accents;
+							border-radius: 8px;
+							outline: none;
+						}
+						&::placeholder {
+							font-size: 0.95rem;
+							color: rgba($black, 0.5);
+						}
+					}
+				}
+				.add_more {
+					width: 100%;
+
+					label {
+						width: 12.25%;
+					}
+					input {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	// FEATURING
+	.featuring {
+		.container {
+			.wrapper {
+				p {
+					font-size: 0.95rem;
+				}
+				button {
+					margin: 50px 0;
+					color: $accents;
+					padding: 10px 15px;
+					span {
+						color: $black;
+						font-weight: 500;
+						font-size: 0.95rem;
+					}
+				}
+				.renewal {
+					margin-top: 30px;
+					span {
+						font-weight: 600;
+					}
+				}
+			}
+		}
+	}
+
+	.payment_method {
+		.container {
+			.wrapper {
+				.inputs {
+					width: 100%;
+
+					input {
+						width: 100%;
+						margin-right: 0px !important;
+					}
+					button {
+						width: 100%;
+						margin-right: 0;
+					}
+				}
+				.label,
+				.request_review {
+					width: 100%;
+					// margin-left: 40px;
+
+					br {
+						display: none;
+					}
+				}
+				.share_infos {
+					width: 80%;
+
+					margin-left: 40px;
+				}
+			}
+		}
+	}
+	.my_messages {
+		.container {
+			.wrapper {
+				padding: 0;
+				.mail_panel {
+					min-width: unset;
+					max-width: unset;
+					padding-right: 5px;
+					.mail_nav {
+						ul {
+							li {
+								a {
+									margin-right: 0;
+									font-size: 0.9rem;
+									width: unset;
+									text-align: center;
+								}
+							}
+						}
+					}
+					.mail_slider {
+						.mail_count {
+							font-size: 0.85rem;
+							// border: 1px solid black;
+							width: 100%;
+						}
+					}
+				}
+				.mail_box {
+					.single_mail {
+						@include flex(center, center, wrap, column);
+						.sender {
+							width: 100%;
+							justify-content: flex-start;
+						}
+						.mail_time_options {
+							width: 100%;
+							justify-content: flex-start;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.my_calendar {
+		.container {
+			.wrapper {
+				padding: 0;
+				.calendar_panel {
+					> div {
+						width: 50%;
+						border-bottom: none;
+						border-right: 1px solid rgba($line_color, 0.5);
+						border-bottom: 1px solid rgba($line_color, 0.5);
+						padding: 15px;
+						p {
+							font-size: 0.9rem;
+						}
+
+						&:nth-child(2) {
+							border-right: none;
+						}
+						&:nth-child(3),
+						&:nth-child(4) {
+							border-bottom: none;
+						}
+					}
+					.holidays {
+						.available {
+							@include flex(center, space-evenly, wrap, column);
+							input {
+								width: 80%;
+								min-width: 180px;
+							}
+						}
+					}
+				}
+				.calendar_view {
+					.days {
+						p {
+							span {
+								display: none;
+							}
+						}
+					}
+					.dates {
+						.date {
+							padding: 5px;
+							.current_date {
+								font-size: 0.9rem;
+							}
+							.date_agenda {
+								padding: 25px 5px 5px 5px !important;
+								ul {
+									li {
+										font-size: 0.8rem;
+									}
+								}
+
+								&::after {
+									display: block;
+									content: "";
+									width: 100%;
+									height: 100%;
+									// border: 1px solid red;
+									position: absolute;
+									top: 0;
+									left: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.booking {
+		.container {
+			.wrapper {
+				padding-bottom: 10px;
+				.calendar_panel {
+					flex-direction: row !important;
+
+					@include flex(center, space-evenly, nowrap, column);
+					.reservations {
+						border: none;
+						@include flex(flex-start, space-between, wrap, column);
+					}
+					.local_time {
+						@include flex(center, center, nowrap, column);
+
+						border: none;
+						margin-top: unset;
+						border-right: 1px solid $gray;
+						align-self: stretch;
+					}
+					.legend {
+						border-top: none;
+					}
+				}
+				.calendar_view {
+					.days {
+						.current_day {
+							p {
+								span {
+									display: inline-block;
+									font-size: 0.85rem;
+								}
+							}
+						}
+					}
+					.time_table {
+						> div {
+							font-size: 0.85rem;
+						}
+					}
+				}
+			}
+		}
+	}
+	.review {
+		.container {
+			.wrapper {
+				.row {
+					@include flex(center, space-between, wrap, column);
+					padding: 20px 0;
+					// border: 1px solid black;
+					border-bottom: 1px solid rgba($line_color, 0.5);
+					.tutor-left {
+						width: 10%;
+						min-width: 200px;
+						max-width: 350px;
+						// border: 1px solid black;
+						@include flex(center, space-between, wrap, row);
+						img {
+							width: 80px;
+							height: 80px;
+							border-radius: 50%;
+						}
+						.review_count {
+							font-size: 0.9rem;
+							color: rgba($line_color, 0.7);
+						}
+					}
+					.review_msg {
+						width: 50%;
+						min-width: 320px;
+						// border: 1px solid black;
+						text-align: center;
+						padding-left: 0px;
+						margin: 10px 0;
+						color: $accents;
+					}
+				}
+			}
+		}
+	}
+	.details {
+		.container {
+			.wrapper {
+				form {
+					// border: 1px solid black;
+					@include flex(flex-start, center, wrap, column);
+					.row {
+						@include flex(center, flex-start, wrap, row);
+						// border: 1px solid black;
+						width: 100%;
+						min-width: unset;
+
+						label {
+							width: 100%;
+							min-width: 230px;
+							margin-bottom: 20px;
+							// border: 1px solid black;
+						}
+						button {
+							background: $white;
+							border: 1px solid rgba($line_color, 0.5);
+							padding: 10px 0;
+							&.active_button {
+								background: $btn-primary;
+								border: none;
+							}
+						}
+						button,
+						input,
+						.select-box {
+							width: 49%;
+							min-width: unset;
+						}
+						.lesson {
+							margin-right: 2%;
+							font-size: 0.85rem;
+						}
+						input,
+						select {
+							padding: 5px 10px;
+							border: 1px solid rgba($line_color, 0.5);
+							border-radius: 3px;
+						}
+						input {
+							font-family: $font_family;
+							font-size: 0.95rem;
+							&:focus {
+								outline: none;
+								border: 1px solid $accents;
+							}
+						}
+						.select-box {
+							position: relative;
+							margin-right: 2%;
+							select {
+								width: 100%;
+								color: $line_color;
+								appearance: none;
+								-moz-appearance: none;
+								-webkit-appearance: none;
+								option {
+									color: $line_color;
+								}
+							}
+							span {
+								position: absolute;
+								right: 10px;
+								top: 50%;
+								transform: translateY(-50%);
+								border-bottom: none;
+								border-top: 8px solid rgba($line_color, 0.5);
+								border-right: 8px solid transparent;
+								border-left: 8px solid transparent;
+								pointer-events: none;
+							}
+						}
+						textarea {
+							width: 100%;
+							border: 1px solid rgba($line_color, 0.5);
+							padding: 10px;
+							font-family: $font_family;
+							color: $line_color;
+							::placeholder {
+								font-family: $font_family;
+							}
+						}
+						&:first-child {
+							margin-bottom: 30px;
+						}
+						.lead {
+							font-style: italic;
+							margin: 30px 0;
+						}
+						&:nth-child(9) {
+							align-items: flex-start;
+						}
+					}
+					> button {
+						width: 170px;
+						margin-top: 30px;
+					}
+				}
+			}
+		}
+	}
+	.tutor_lesson_header {
+		margin-bottom: 250px !important;
+	}
+}
+
+@media (max-width: $breakPoint_6_b) {
+	header {
+		padding: 50px 10px;
+		padding: 0;
+		background-position: 80% top;
+		height: 70vh;
+		hgroup {
+			padding: 20px;
+
+			h1 {
+				padding: 0px;
+				font-weight: 500;
+				font-size: 1.8rem;
+				span {
+					color: $btn-primary;
+				}
+			}
+			p {
+				font-size: 0.85rem;
+			}
+			label {
+				width: 100%;
+				position: relative;
+				display: block;
+				margin: 20px 0;
+
+				@include flex(center, center, nowrap, row);
+
+				input {
+					width: 60%;
+					height: 50px;
+					border: none;
+					font-size: 0.9rem;
+					padding: 0 10px;
+					&::placeholder {
+						font-size: 0.75rem;
+					}
+				}
+
+				button {
+					width: 40%;
+					@include btn-primary($black, 1rem);
+					height: 50px;
+					font-size: 0.8rem;
+					border-top-right-radius: 8px;
+					border-bottom-right-radius: 8px;
+					border-top-left-radius: 0;
+					border-bottom-left-radius: 0;
+				}
+			}
+		}
+	}
+
+	.faq {
+		padding-bottom: 80px;
+		.container {
+			.wrapper {
+				padding: 0px 20px 30px 20px;
+				.faq-buttons {
+					@include flex(center, center, wrap, column);
+					button {
+						@include btn-primary($footer, 1.1rem);
+						padding: 15px 30px;
+						border-radius: 6px;
+						margin-right: 0px;
+						margin-top: 20px;
+					}
+					.faq-socials {
+						img {
+							margin-right: 20px;
+							height: 35px;
+							&:last-child {
+								margin-right: 0;
+							}
+						}
+						margin-top: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	.find_your_tutor {
+		.container {
+			.search_options {
+				.filter_opt {
+					width: 90%;
+					border-radius: 10px !important;
+					border: none;
+				}
+			}
+			.input_search {
+				@include flex(center, center, wrap, row);
+				.search-term {
+					margin-top: 20px;
+				}
+				p {
+					margin-top: 20px;
+				}
+				.custom-select {
+					margin-top: 20px;
+					padding: 0;
+				}
+			}
+		}
+	}
+	.tutor_profile_header {
+		.container {
+			width: 95%;
+		}
+	}
+
+	.tutor_section {
+		.container {
+			width: 95%;
+		}
+	}
+	// MY CALSSES
+	.my_classes {
+		.container {
+			.wrapper {
+				width: 100%;
+
+				.calendar_table {
+					table {
+						tr {
+							@include flex(center, center, wrap, column);
+							padding: 5px 0;
+							td {
+								padding: 0px 0;
+								font-size: 0.9rem;
+								margin-bottom: 3px;
+							}
+							border: 1px solid rgba($line_color, 0.3);
+							border-bottom: none;
+							&:last-child {
+								border-bottom: 1px solid rgba($line_color, 0.3);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// TUTOR DETAILS
+	.tutor_details_header {
+		.tutor-profile {
+			.container {
+				.tutor-profile-view {
+					.tutor-profile-card {
+						.tutor-img {
+						}
+						.tutor-content {
+							justify-content: space-between;
+							padding: 10px;
+							.my_profile {
+								flex-direction: column;
+								justify-content: flex-start;
+								align-items: flex-end;
+								order: 2;
+								width: 50%;
+								button {
+									font-size: 0.85rem;
+									line-height: 1.5;
+									span {
+										font-weight: 600;
+									}
+									margin-bottom: 15px;
+								}
+								> div {
+									.rate {
+										margin: 5px 0;
+										img {
+											width: 18px;
+											height: 18px;
+										}
+									}
+									.views {
+										color: rgba($line_color, 0.5);
+										font-size: 0.85rem;
+									}
+								}
+							}
+							.tutor-card-headline {
+								order: 3;
+								@include flex(stretch, space-between, wrap, column);
+								h3 {
+									font-size: 1.5rem;
+								}
+								.tutor_for {
+									font-size: 1.1em;
+									margin: 10px 0 20px 0;
+									align-self: flex-start;
+								}
+							}
+							.tutor-img-mob {
+								order: 1;
+							}
+							.tutor-card-description {
+								order: 4;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: $breakPoint_7) {
+	.map-section {
+		.map-container {
+			.map-wrapper {
+				.map-box {
+					.map-marker {
+						transform: scale(0.65);
+					}
+				}
+			}
+		}
+	}
+	.how {
+		.container {
+			.row {
+				.description_img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.tutor_profile_view {
+		.container {
+			.tutor-card {
+				@include flex(stretch, space-between, wrap, row);
+
+				.tutor-card-ctr {
+					width: 100%;
+					padding: 0 20px 10px 20px;
+					@include flex(center, space-between, wrap, row);
+					.price {
+						width: 45%;
+					}
+					.availability {
+						width: 45%;
+						margin-bottom: 10px;
+						margin-right: 0px;
+						margin-left: 0px;
+					}
+					.btn-trial {
+						width: 45%;
+						margin-bottom: 10px;
+						margin-right: 0px;
+						margin-left: 0px;
+					}
+					.btn-book-lesson {
+						width: 45%;
+						margin-right: 0px;
+						margin-left: 0px;
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+
+	.tutor_profile_header {
+		margin-bottom: 330px;
+		.container {
+			bottom: -70%;
+		}
+	}
+
+	.tutor_lesson_header {
+		margin-bottom: 250px !important;
+	}
+	.pricing {
+		.container {
+			.wrapper {
+				.row {
+					@include flex(center, flex-start, wrap, row);
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.payment {
+		.container {
+			.wrapper {
+				.tutor_payment_text {
+					width: 50%;
+					p {
+						font-size: 0.85rem;
+						margin-right: 5px;
+					}
+				}
+				.tutor_payment_info {
+					width: 50%;
+
+					p {
+						font-size: 0.85rem;
+						span {
+							margin-right: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
