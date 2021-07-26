@@ -1312,7 +1312,7 @@ TUTOR VIEW
 Becom a tutor
 *******************/
 .become_tutor_header {
-  background-image: url(/img/Become_a_tutor/becme_a_tutor_header_bg.png);
+  background-image: url(../img/Become_a_tutor/becme_a_tutor_header_bg.png) !important;
   background-position: center;
   background-size: cover;
   padding: 80px 0; }
@@ -1458,6 +1458,24 @@ Becom a tutor
         font-weight: 300; }
         .become_tutor_header .wrapper .weekly-banner p span {
           font-weight: 600; }
+      @media (max-width: 860px) {
+        .become_tutor_header .wrapper .weekly-banner {
+          display: none; } }
+
+.weekly-banner_responsive {
+  padding: 30px 0;
+  background-color: #fff;
+  text-align: center;
+  display: none; }
+  .weekly-banner_responsive p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #414e52; }
+    .weekly-banner_responsive p span {
+      font-weight: 600; }
+  @media (max-width: 860px) {
+    .weekly-banner_responsive {
+      display: block; } }
 
 .statistics {
   padding: 60px 0; }
